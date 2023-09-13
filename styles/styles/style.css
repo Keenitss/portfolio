@@ -22,9 +22,15 @@ body{
     color: var(--cor-secundaria);
 }
 
-.cabecalho{
+.cabecalho {
+    height: 50px;
+    position: sticky;
+    top: 0;
     padding: 2% 0 0 15%;
+    z-index: 100; /* Add z-index to ensure it appears above other content */
+    background-color: var(--cor-primaria); /* Add a background color if needed */
 }
+
 
 .cabecalho__menu{
     display: flex;
@@ -40,11 +46,12 @@ body{
 }
 
 .cabecalho__menu__link:hover{
+    transform: scale(1.4); /* Scale up the icon on hover */
     text-decoration:underline;
 }
 
 .apresentacao{
-    padding: 8% 15%;
+    padding: 4% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,11 +107,13 @@ body{
     font-family: var(--fonte-secundaria);
 }
 .apresentacao__links__navegacao:hover{
+    transform: scale(1.1); /* Scale up the icon on hover */
     background-color: var(--cor-hover);
 }
 
 .apresentacao__imagem{
     width: 50%;
+    border-radius: 10%;
 }
 
 .rodape{
@@ -136,3 +145,4 @@ body{
         width: auto;
     }
 }
+
